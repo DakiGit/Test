@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qf.mapper.TbMsgMapper">
+
+    <insert id="addMsg" parameterType="com.qf.pojo.TbMsg">
+        insert into tb_msg(msg,name) value(#{msg},#{name})
+    </insert>
+    <update id="updateMsg" parameterType="com.qf.pojo.TbMsg">
+        update tb_msg set msg = #{msg},name = #{name} where id=#{id}
+    </update>
+    <delete id="deleteMsg" parameterType="int">
+       delete from tb_msg where id = #{id}
+    </delete>
+    <select id="findAll" resultType="com.qf.pojo.TbMsg">
+         select id,msg,name from tb_msg
+    </select>
+
+</mapper>
