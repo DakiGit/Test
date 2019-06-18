@@ -10,6 +10,6 @@ package com.qf.controller;
 public class Test {
     public static void main(String[] args) {
         System.out.println("dfdf"+"dfdfsfsfs");
-        System.out.println("yourself")
+        System.out.println("yourselfff")
     }
 }
